@@ -1,0 +1,153 @@
+.app {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.app h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.add-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-form button:hover {
+  background: #535bf2;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-list li.empty {
+  justify-content: center;
+  color: #999;
+  border-bottom: none;
+}
+
+.todo-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.todo-list li.done span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #555;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.filters button {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.filters button.active {
+  border-color: #646cff;
+  color: #646cff;
+}
+
+.footer > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app {
+    background: #1a1a1a;
+    color: #eee;
+  }
+
+  .add-form input {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #eee;
+  }
+
+  .todo-list li {
+    border-bottom-color: #333;
+  }
+
+  .footer {
+    border-top-color: #333;
+    color: #ccc;
+  }
+
+  .filters button,
+  .footer > button {
+    color: #ccc;
+  }
+}

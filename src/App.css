@@ -2,9 +2,9 @@
   max-width: 480px;
   margin: 3rem auto;
   padding: 2rem;
-  background: #fff;
+  background: #fff8f2;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(180, 40, 0, 0.25);
   text-align: left;
 }
 
@@ -12,6 +12,7 @@
   margin-top: 0;
   text-align: center;
   font-size: 1.8rem;
+  color: #d7263d;
 }
 
 .add-form {
@@ -23,7 +24,7 @@
 .add-form input {
   flex: 1;
   padding: 0.6rem 0.8rem;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #ffb199;
   border-radius: 8px;
   font-size: 1rem;
 }
@@ -32,14 +33,14 @@
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 8px;
-  background: #646cff;
+  background: linear-gradient(135deg, #ff512f, #f09819);
   color: white;
   cursor: pointer;
   font-weight: 600;
 }
 
 .add-form button:hover {
-  background: #535bf2;
+  background: linear-gradient(135deg, #e6432a, #d98416);
 }
 
 .todo-list {
@@ -53,12 +54,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.6rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ffe0cc;
 }
 
 .todo-list li.empty {
   justify-content: center;
-  color: #999;
+  color: #b26b52;
   border-bottom: none;
 }
 
@@ -70,15 +71,19 @@
   flex: 1;
 }
 
+.todo-list input[type='checkbox'] {
+  accent-color: #ff512f;
+}
+
 .todo-list li.done span {
   text-decoration: line-through;
-  color: #999;
+  color: #c98f78;
 }
 
 .delete-btn {
   background: none;
   border: none;
-  color: #c0392b;
+  color: #d7263d;
   cursor: pointer;
   font-size: 1rem;
   padding: 0.2rem 0.4rem;
@@ -90,9 +95,9 @@
   justify-content: space-between;
   margin-top: 1.2rem;
   padding-top: 1rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ffe0cc;
   font-size: 0.85rem;
-  color: #555;
+  color: #a24d2a;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
@@ -108,46 +113,59 @@
   border-radius: 6px;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
-  color: #555;
+  color: #a24d2a;
   text-transform: capitalize;
 }
 
 .filters button.active {
-  border-color: #646cff;
-  color: #646cff;
+  border-color: #ff512f;
+  color: #ff512f;
+  background: #fff0e6;
 }
 
 .footer > button {
   background: none;
   border: none;
   cursor: pointer;
-  color: #555;
+  color: #a24d2a;
   text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
   .app {
-    background: #1a1a1a;
-    color: #eee;
+    background: #241210;
+    color: #ffe4d6;
+  }
+
+  .app h1 {
+    color: #ff8a5c;
   }
 
   .add-form input {
-    background: #2a2a2a;
-    border-color: #444;
-    color: #eee;
+    background: #331915;
+    border-color: #a3390a;
+    color: #ffe4d6;
   }
 
   .todo-list li {
-    border-bottom-color: #333;
+    border-bottom-color: #4a231c;
+  }
+
+  .todo-list li.done span {
+    color: #b8776a;
   }
 
   .footer {
-    border-top-color: #333;
-    color: #ccc;
+    border-top-color: #4a231c;
+    color: #e0a98f;
   }
 
   .filters button,
   .footer > button {
-    color: #ccc;
+    color: #e0a98f;
+  }
+
+  .filters button.active {
+    background: #3a1a14;
   }
 }

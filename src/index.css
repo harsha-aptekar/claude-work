@@ -6,11 +6,11 @@
 body {
   margin: 0;
   min-height: 100svh;
-  background: #f3f3f5;
+  background: linear-gradient(160deg, #ff512f 0%, #ff8a00 50%, #ffd200 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0f0f10;
+    background: linear-gradient(160deg, #3a0d0d 0%, #7a1f0e 50%, #a3390a 100%);
   }
 }
